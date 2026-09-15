@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kabir Durgani — NUS Business Analytics student building software, machine learning models, and practical data applications. Explore selected projects and coursework.">
+  <meta name="theme-color" content="#f8f9f7">
+  <meta property="og:title" content="Kabir Durgani — Data & Software">
+  <meta property="og:description" content="Explore my work in machine learning, mobile development, and applied analytics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://k4b-04.github.io/">
+  <link rel="canonical" href="https://k4b-04.github.io/">
+  <title>Kabir Durgani — Data & Software</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./data.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="Kabir Durgani home">KD<span class="mark-dot">.</span><span class="wordmark-label">KABIR DURGANI</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu <span aria-hidden="true">+</span></button>
+      <nav id="primary-nav" aria-label="Main navigation">
+        <a href="#projects"><span>01</span> Projects</a>
+        <a href="#about"><span>02</span> About</a>
+        <a href="#learning"><span>03</span> Learning</a>
+        <a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> SINGAPORE &nbsp;/&nbsp; NUS · CLASS OF 2029</div>
+        <h1 id="hero-title">Kabir<br> Durgani<span class="accent">.</span></h1>
+        <p class="hero-lead">Data, models, and<br> useful software.</p>
+        <p class="hero-description">I study Business Analytics at the National University of Singapore, with a minor in Quantitative Finance. I build applications and explore how data can inform better decisions.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="./assets/Kabir-Durgani-Resume-Aug-2026.docx" download>Download résumé <span class="file-label">DOCX</span> <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-stack"><span>WORKING WITH</span><p>Python <b>/</b> JavaScript <b>/</b> SQL <b>/</b> React Native</p></div>
+      </div>
+      <div class="hero-experiment">
+        <div class="experiment-header"><span class="eyebrow">INTERACTIVE SAMPLE</span><span class="square-indicator" aria-hidden="true"></span></div>
+        <div class="experiment-body">
+          <div class="eyebrow muted">WORLD CUP 2026 PREDICTOR</div>
+          <h2>A match.<br> Three possibilities.</h2>
+          <p class="experiment-intro">Explore an archived prediction from my machine learning project.</p>
+          <label class="field-label" for="hero-match">SELECT A MATCH</label>
+          <select id="hero-match" class="match-select" aria-describedby="hero-source"></select>
+          <div id="hero-prediction" aria-live="polite"></div>
+          <p id="hero-source" class="microcopy">Saved model outputs · Group-stage dataset</p>
+        </div>
+        <button class="experiment-footer" type="button" data-project="world-cup">Inspect the project <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+    <div class="section-shell intro-strip" aria-label="Areas of interest"><span>01 / MACHINE LEARNING</span><span>02 / SOFTWARE DEVELOPMENT</span><span>03 / APPLIED ANALYTICS</span></div>
+
+    <section class="section-shell work-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-title">From question to working project.</h2></div>
+        <span class="section-count">05 PROJECTS</span>
+      </div>
+      <div class="work-toolbar">
+        <p>Open a project to explore the problem, the implementation, and a small demonstration.</p>
+        <div class="segmented" role="group" aria-label="Filter projects">
+          <button type="button" data-filter="all" aria-pressed="true">All work <span>05</span></button>
+          <button type="button" data-filter="data" aria-pressed="false">Data & ML</button>
+          <button type="button" data-filter="software" aria-pressed="false">Software</button>
+        </div>
+      </div>
+      <p id="filter-status" class="sr-only" role="status"></p>
+      <div id="project-grid" class="project-grid"></div>
+      <noscript><p>Enable JavaScript to explore the project gallery and demonstrations. You can also find my work on <a href="https://github.com/k4b-04">GitHub</a>.</p></noscript>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="section-shell about-grid">
+        <div class="about-intro">
+          <p class="eyebrow">02 / A LITTLE CONTEXT</p>
+          <h2 id="about-title">The person<br> behind the projects.</h2>
+          <p>I’m interested in the full path from a question to something useful: understanding the data, building the model, and creating an interface people can use.</p>
+          <p>My projects range from campus food sharing to football predictions and automated ML experiments. Outside project work, I’ve analysed pricing, helped automate operations, and led teams during national service.</p>
+          <div class="about-links"><a class="text-link" href="https://www.linkedin.com/in/kabir-durgani" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="text-link" href="https://github.com/k4b-04" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+        </div>
+        <div class="experience-list">
+          <h3 class="eyebrow">EXPERIENCE</h3>
+          <article class="experience-item"><div class="experience-date">MAR — JUL 2025</div><div><h3>Pricing & operations</h3><p class="experience-org">CPO Pte Ltd · E-Commerce Agent & Pricing Analyst</p><p>Analysed competitor pricing and market trends, supported operational decisions, and worked with software engineers to automate payslip generation using Python and Excel.</p></div></article>
+          <article class="experience-item"><div class="experience-date">2023 — 2024</div><div><h3>Team leadership</h3><p class="experience-org">Singapore Armed Forces · Section 2nd In-Charge</p><p>Led and mentored a team through training, daily operations, and logistical coordination.</p></div></article>
+          <article class="experience-item"><div class="experience-date">MAY — AUG 2024</div><div><h3>Large-scale coordination</h3><p class="experience-org">NDP Spectator Management Committee</p><p>Coordinated between national servicemen and volunteers supporting events with 27,000 spectators, helping resolve operational issues as they arose.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell learning-section" id="learning" aria-labelledby="learning-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / ALWAYS LEARNING</p><h2 id="learning-title">Building the foundations.</h2></div><span class="section-count">NUS · 2025 — 2029</span></div>
+      <div class="education-summary"><div><h3>BSc in Business Analytics</h3><p>National University of Singapore · Minor in Quantitative Finance</p></div><div class="education-stat"><strong id="completed-units">48</strong><span>UNITS COMPLETED</span></div></div>
+      <div class="learning-layout">
+        <div class="semester-tabs" role="tablist" aria-label="Coursework by semester" aria-orientation="vertical">
+          <button type="button" id="term-y2s1" role="tab" data-term="y2s1" aria-controls="course-panel" aria-selected="true">Year 2 · Semester 1 <span class="term-status in-progress">In progress</span></button>
+          <button type="button" id="term-summer" role="tab" data-term="summer" aria-controls="course-panel" aria-selected="false" tabindex="-1">Year 1 · Summer <span class="term-status">Completed</span></button>
+          <button type="button" id="term-y1s2" role="tab" data-term="y1s2" aria-controls="course-panel" aria-selected="false" tabindex="-1">Year 1 · Semester 2 <span class="term-status">Completed</span></button>
+          <button type="button" id="term-y1s1" role="tab" data-term="y1s1" aria-controls="course-panel" aria-selected="false" tabindex="-1">Year 1 · Semester 1 <span class="term-status">Completed</span></button>
+        </div>
+        <div id="course-panel" class="course-panel" role="tabpanel" aria-labelledby="term-y2s1" tabindex="0"></div>
+      </div>
+      <div class="certifications"><span class="eyebrow">BEYOND THE CLASSROOM</span><div><strong>Harvard CS50</strong><span>Introduction to Computer Science</span></div><div><strong>IBM Data Science</strong><span>Professional Certificate</span></div></div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-shell contact-grid">
+        <div><p class="eyebrow">04 / LET’S CONNECT</p><h2 id="contact-title">Have a problem<br> worth working on?</h2><p>I’m interested in opportunities across software engineering, data analytics, and machine learning.</p></div>
+        <div class="contact-actions"><a class="contact-email" href="mailto:kabirdurgani@u.nus.edu">kabirdurgani@u.nus.edu <span aria-hidden="true">↗</span></a><button type="button" class="copy-email" id="copy-email">Copy email address <span aria-hidden="true">＋</span></button><p id="copy-status" class="microcopy" role="status"></p><div class="contact-links"><a href="https://www.linkedin.com/in/kabir-durgani" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/k4b-04" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="./assets/Kabir-Durgani-Resume-Aug-2026.docx" download>Résumé ↓</a></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="section-shell site-footer"><span>© 2026 KABIR DURGANI</span><span>DATA & SOFTWARE / SINGAPORE</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-topbar"><span id="dialog-index" class="eyebrow"></span><button type="button" class="dialog-close" aria-label="Close project">Close <span aria-hidden="true">×</span></button></div>
+    <div id="dialog-content"></div>
+  </dialog>
+</body>
+</html>

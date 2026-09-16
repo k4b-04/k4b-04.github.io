@@ -1,6 +1,6 @@
 # Kabir Durgani portfolio
 
-A responsive portfolio for software engineering, data analytics, and machine learning opportunities.
+A responsive portfolio focused on applied AI, machine learning, NLP, and ML engineering, supported by software development projects.
 
 ## Open the portfolio
 
@@ -10,7 +10,7 @@ Keep index.html, styles.css, app.js, data.js, and the assets folder together.
 
 ## What is included
 
-- Five project case studies, with filters for Data & ML and Software.
+- Five project case studies, led by World Cup Predictor and ML Research Agent, with filters for AI & ML and Software.
 - An explorer for 72 saved World Cup group-stage predictions and eight annual evaluation results.
 - A Nearbites discovery demonstration using fictional listings.
 - A Career Compass illustration connecting actual coursework to areas of interest.
@@ -19,7 +19,7 @@ Keep index.html, styles.css, app.js, data.js, and the assets folder together.
 - Four semester views covering 19 NUS modules.
 - Experience, contact links, and the original August 2026 résumé download.
 
-Y1 Semester 1, Y1 Semester 2, and Y1 Summer are marked completed: 48 units. Y2 Semester 1 is marked in progress: 22 units, as confirmed by Kabir. Individual module grades and GPA are not displayed on the website.
+Y1 Semester 1, Y1 Semester 2, and Y1 Summer are marked completed: 48 units. Y2 Semester 1 is marked in progress: 22 units, as confirmed by Kabir. The current semester includes IS2218 Digital Platforms for Businesses, replacing GEN2000 following Kabir’s correction. Individual module grades and GPA are not displayed on the website.
 
 ## GitHub Pages
 
@@ -58,7 +58,7 @@ The following points are content decisions, not errors hidden by the portfolio:
 ## Source material
 
 - Résumé: Kabir Durgani Resume 0826.docx supplied by Kabir.
-- Coursework: the supplied NUS module screenshot; Y2 S1 status confirmed by Kabir.
+- Coursework: the supplied NUS module screenshot, with Y2 S1 status and the IS2218 replacement confirmed by Kabir.
 - Project descriptions: reviewed README files, key source files, and local project documentation.
 - World Cup archive: data/processed/group_2026_predictions.csv.
 - Annual validation: models/walk_forward_results.csv.

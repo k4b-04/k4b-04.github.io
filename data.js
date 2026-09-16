@@ -1,59 +1,8 @@
 window.PORTFOLIO_DATA = {
   "projects": [
     {
-      "id": "nearbites",
-      "index": "01",
-      "name": "Nearbites",
-      "category": "MOBILE / FULL STACK",
-      "date": "2026",
-      "filters": [
-        "software"
-      ],
-      "featured": true,
-      "summary": "A campus food-sharing app that brings surplus food listings, discovery, and community updates into one place.",
-      "stack": [
-        "React Native",
-        "Expo",
-        "Appwrite"
-      ],
-      "role": "Developer · two-person Orbital team",
-      "status": "Pilot / continued development",
-      "repo": "https://github.com/zoooble/nearbites_adv",
-      "problem": "Surplus food announcements were scattered across ad-hoc Telegram posts. Students needed a clearer way to find food nearby, understand dietary suitability, and check whether it was still available.",
-      "contribution": "My work covered the mobile app, interactive map, posting flow, preference-based onboarding, and backend integration. Nearbites began as a two-person NUS Orbital project and has continued to evolve.",
-      "features": [
-        "Map and feed views for discovering food, with location and dietary preferences.",
-        "GPS, manual pin placement, and campus building lookup for posting.",
-        "Community listing updates, contribution rewards, and duplicate-request handling."
-      ],
-      "learning": "Location accuracy, stale listings, and interrupted requests all affect whether an app feels dependable. The latest work explores server-side validation and recoverable actions alongside the interface.",
-      "architecture": [
-        [
-          "Discover",
-          "Mobile interface",
-          "Expo Router screens provide a feed, map, posting flow, profile, and preferences."
-        ],
-        [
-          "Connect",
-          "Appwrite integration",
-          "Authentication, listing data, photo storage, and service calls connect the mobile experience to its backend."
-        ],
-        [
-          "Validate",
-          "Server rules",
-          "The service checks listing fields, location freshness, contribution limits, and reward eligibility."
-        ],
-        [
-          "Recover",
-          "Repeated requests",
-          "Saved request identifiers and a transaction ledger help resolve interrupted submissions without repeating a charge or reward."
-        ]
-      ],
-      "engineeringNote": "The current codebase is a pilot. Some notification, account-management, and native-device acceptance work remains before a public release."
-    },
-    {
       "id": "world-cup",
-      "index": "02",
+      "index": "01",
       "name": "World Cup Predictor",
       "category": "MACHINE LEARNING",
       "date": "2026",
@@ -61,7 +10,7 @@ window.PORTFOLIO_DATA = {
         "data"
       ],
       "featured": true,
-      "summary": "Match outcomes, score estimates, and tournament simulations built from historical international football data.",
+      "summary": "A machine learning pipeline for predicting football match outcomes, estimating scores, and exploring tournament simulations.",
       "stack": [
         "Python",
         "scikit-learn",
@@ -103,60 +52,8 @@ window.PORTFOLIO_DATA = {
       "engineeringNote": "The annual validation chart and archived tournament predictions come from different saved artifacts. No single tournament accuracy is presented as a verified forecast result."
     },
     {
-      "id": "career-compass",
-      "index": "03",
-      "name": "Career Compass",
-      "category": "APPLIED NLP",
-      "date": "2026",
-      "filters": [
-        "data",
-        "software"
-      ],
-      "featured": false,
-      "summary": "Connecting university coursework and résumé experience to the skills a job actually asks for.",
-      "stack": [
-        "Python",
-        "Sentence Transformers",
-        "Streamlit"
-      ],
-      "role": "Application development",
-      "status": "Working prototype",
-      "repo": "https://github.com/k4b-04/career-compass",
-      "problem": "Module titles alone do not make it easy to see how a degree aligns with a target role. Career Compass brings course descriptions, job requirements, and résumé evidence into one view.",
-      "contribution": "This project combines NUSMods module lookup, document text extraction, semantic comparison, and an interactive dashboard for examining coverage and gaps.",
-      "features": [
-        "Import NUS module descriptions by module code.",
-        "Compare requirements with coursework and résumé evidence using text embeddings and explicit skill matches.",
-        "Inspect covered requirements and gaps, then compare up to four future modules."
-      ],
-      "learning": "A useful score needs an explanation. The dashboard links requirements to supporting evidence and treats its alignment index as a heuristic rather than a probability.",
-      "architecture": [
-        [
-          "Collect",
-          "Course and résumé text",
-          "NUSMods provides module descriptions. PDF, DOCX, and text uploads supply résumé evidence."
-        ],
-        [
-          "Prepare",
-          "Meaningful evidence",
-          "Preprocessing separates job requirements, course material, and résumé entries."
-        ],
-        [
-          "Compare",
-          "Semantic and explicit matches",
-          "MiniLM sentence embeddings and cosine similarity contribute 75% of the hybrid score; explicit skill matching contributes 25%."
-        ],
-        [
-          "Explain",
-          "Coverage and gaps",
-          "The dashboard surfaces matching evidence and a heuristic alignment index, with a separate module comparison view."
-        ]
-      ],
-      "engineeringNote": "The alignment index is a heuristic measure of text alignment. It has not been calibrated as a probability of job suitability or hiring success."
-    },
-    {
       "id": "techjam",
-      "index": "04",
+      "index": "02",
       "name": "ML Research Agent",
       "category": "ML ENGINEERING",
       "date": "TECHJAM 2026",
@@ -164,8 +61,8 @@ window.PORTFOLIO_DATA = {
         "data",
         "software"
       ],
-      "featured": false,
-      "summary": "An automated research loop that proposes model changes, runs experiments, and records what happened.",
+      "featured": true,
+      "summary": "An LLM-guided loop for proposing model changes, executing experiments, and recording results on a recommendation benchmark.",
       "stack": [
         "Python",
         "NumPy",
@@ -207,12 +104,65 @@ window.PORTFOLIO_DATA = {
       "engineeringNote": "A separate working directory and timeout provide execution controls, rather than a full security sandbox. Final performance figures are being reconciled across saved run artifacts."
     },
     {
+      "id": "career-compass",
+      "index": "03",
+      "name": "Career Compass",
+      "category": "APPLIED NLP",
+      "date": "2026",
+      "filters": [
+        "data",
+        "software"
+      ],
+      "featured": false,
+      "summary": "An NLP application that uses sentence embeddings and skill matching to connect coursework and résumé evidence with job requirements.",
+      "stack": [
+        "Python",
+        "Sentence Transformers",
+        "Streamlit"
+      ],
+      "role": "Application development",
+      "status": "Working prototype",
+      "repo": "https://github.com/k4b-04/career-compass",
+      "problem": "Module titles alone do not make it easy to see how a degree aligns with a target role. Career Compass brings course descriptions, job requirements, and résumé evidence into one view.",
+      "contribution": "This project combines NUSMods module lookup, document text extraction, semantic comparison, and an interactive dashboard for examining coverage and gaps.",
+      "features": [
+        "Import NUS module descriptions by module code.",
+        "Compare requirements with coursework and résumé evidence using text embeddings and explicit skill matches.",
+        "Inspect covered requirements and gaps, then compare up to four future modules."
+      ],
+      "learning": "A useful score needs an explanation. The dashboard links requirements to supporting evidence and treats its alignment index as a heuristic rather than a probability.",
+      "architecture": [
+        [
+          "Collect",
+          "Course and résumé text",
+          "NUSMods provides module descriptions. PDF, DOCX, and text uploads supply résumé evidence."
+        ],
+        [
+          "Prepare",
+          "Meaningful evidence",
+          "Preprocessing separates job requirements, course material, and résumé entries."
+        ],
+        [
+          "Compare",
+          "Semantic and explicit matches",
+          "MiniLM sentence embeddings and cosine similarity contribute 75% of the hybrid score; explicit skill matching contributes 25%."
+        ],
+        [
+          "Explain",
+          "Coverage and gaps",
+          "The dashboard surfaces matching evidence and a heuristic alignment index, with a separate module comparison view."
+        ]
+      ],
+      "engineeringNote": "The alignment index is a heuristic measure of text alignment. It has not been calibrated as a probability of job suitability or hiring success."
+    },
+    {
       "id": "refound",
-      "index": "05",
+      "index": "04",
       "name": "ReFound",
       "category": "BACKEND / APPLIED AI",
       "date": "HACK & ROLL 2026",
       "filters": [
+        "data",
         "software"
       ],
       "featured": false,
@@ -256,6 +206,57 @@ window.PORTFOLIO_DATA = {
         ]
       ],
       "engineeringNote": "Matching scores are heuristic signals for suggesting candidates. They are not calibrated probabilities that two reports refer to the same physical item."
+    },
+    {
+      "id": "nearbites",
+      "index": "05",
+      "name": "Nearbites",
+      "category": "MOBILE / FULL STACK",
+      "date": "2026",
+      "filters": [
+        "software"
+      ],
+      "featured": false,
+      "summary": "A campus food-sharing app that brings surplus food listings, discovery, and community updates into one place.",
+      "stack": [
+        "React Native",
+        "Expo",
+        "Appwrite"
+      ],
+      "role": "Developer · two-person Orbital team",
+      "status": "Pilot / continued development",
+      "repo": "https://github.com/zoooble/nearbites_adv",
+      "problem": "Surplus food announcements were scattered across ad-hoc Telegram posts. Students needed a clearer way to find food nearby, understand dietary suitability, and check whether it was still available.",
+      "contribution": "My work covered the mobile app, interactive map, posting flow, preference-based onboarding, and backend integration. Nearbites began as a two-person NUS Orbital project and has continued to evolve.",
+      "features": [
+        "Map and feed views for discovering food, with location and dietary preferences.",
+        "GPS, manual pin placement, and campus building lookup for posting.",
+        "Community listing updates, contribution rewards, and duplicate-request handling."
+      ],
+      "learning": "Location accuracy, stale listings, and interrupted requests all affect whether an app feels dependable. The latest work explores server-side validation and recoverable actions alongside the interface.",
+      "architecture": [
+        [
+          "Discover",
+          "Mobile interface",
+          "Expo Router screens provide a feed, map, posting flow, profile, and preferences."
+        ],
+        [
+          "Connect",
+          "Appwrite integration",
+          "Authentication, listing data, photo storage, and service calls connect the mobile experience to its backend."
+        ],
+        [
+          "Validate",
+          "Server rules",
+          "The service checks listing fields, location freshness, contribution limits, and reward eligibility."
+        ],
+        [
+          "Recover",
+          "Repeated requests",
+          "Saved request identifiers and a transaction ledger help resolve interrupted submissions without repeating a charge or reward."
+        ]
+      ],
+      "engineeringNote": "The current codebase is a pilot. Some notification, account-management, and native-device acceptance work remains before a public release."
     }
   ],
   "matches": [
@@ -1285,8 +1286,8 @@ window.PORTFOLIO_DATA = {
           "units": 4
         },
         {
-          "code": "GEN2000",
-          "name": "Living Culture: Engaging Indian Communities in Singapore",
+          "code": "IS2218",
+          "name": "Digital Platforms for Businesses",
           "units": 4
         },
         {
